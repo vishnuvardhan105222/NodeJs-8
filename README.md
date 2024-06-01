@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Todo Application
 
 Given an `app.js` file and an empty database file `todoApplication.db`.
@@ -127,26 +128,98 @@ and write APIs to perform operations on the table `todo`,
 ### API 2
 
 #### Path: `/todos/:todoId/`
+=======
+<<<<<<< HEAD
+# Player Match Scores
+
+Given two files `app.js` and a database file `cricketMatchDetails.db` consisting of three tables `player_details`, `match_details` and `player_match_score`.
+
+Write APIs to perform operations on the tables `player_details`, `match_details` and `player_match_score` containing the following columns,
+
+**Player Details Table**
+
+| Column    | Type    |
+| ---------- | ------- |
+| player_id   | INTEGER |
+| player_name | TEXT    |
+
+**Match Details Table**
+
+| Column    | Type    |
+| ---------- | ------- |
+| match_id   | INTEGER |
+| match | TEXT    |
+|year|INTEGER|
+
+**Player Match Score Table**
+
+| Column    | Type    |
+| ---------- | ------- |
+| player_match_id   | INTEGER |
+| player_id | INTEGER    |
+|match_id|INTEGER|
+|score|INTEGER|
+|fours | INTEGER |
+|sixes | INTEGER |
+
+### API 1
+
+#### Path: `/players/`
 
 #### Method: `GET`
 
 #### Description:
 
-Returns a specific todo based on the todo ID
+Returns a list of all the players in the player table
 
 #### Response
 
 ```
+[
+  { 
+    playerId: 1,
+    playerName: "Ram"
+  },
+
+  ...
+]
+```
+
+### API 2
+
+#### Path: `/players/:playerId/`
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
+
+#### Method: `GET`
+
+#### Description:
+
+<<<<<<< HEAD
+Returns a specific todo based on the todo ID
+=======
+Returns a specific player based on the player ID
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
+
+#### Response
+
+```
+<<<<<<< HEAD
 {
   id: 2,
   todo: "Learn JavaScript",
   priority: "HIGH",
   status: "DONE"
+=======
+{ 
+  playerId: 2,
+  playerName: "Joseph"
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
 }
 ```
 
 ### API 3
 
+<<<<<<< HEAD
 #### Path: `/todos/`
 
 #### Method: `POST`
@@ -154,21 +227,35 @@ Returns a specific todo based on the todo ID
 #### Description:
 
 Create a todo in the todo table,
+=======
+#### Path: `/players/:playerId/`
+
+#### Method: `PUT`
+
+#### Description:
+
+Updates the details of a specific player based on the player ID
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
 
 #### Request
 
 ```
 {
+<<<<<<< HEAD
   "id": 10,
   "todo": "Finalize event theme",
   "priority": "LOW",
   "status": "TO DO"
+=======
+  "playerName": "Raju"
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
 }
 ```
 
 #### Response
 
 ```
+<<<<<<< HEAD
 Todo Successfully Added
 ```
 
@@ -233,11 +320,107 @@ Updates the details of a specific todo based on the todo ID
 #### Description:
 
 Deletes a todo from the todo table based on the todo ID
+=======
+Player Details Updated
+```
+
+
+
+### API 4
+
+#### Path: `/matches/:matchId/`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns the match details of a specific match
 
 #### Response
 
 ```
+{ 
+  matchId: 18,
+  match: "RR vs SRH",
+  year: 2011
+}
+```
+
+### API 5
+
+#### Path: `/players/:playerId/matches`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a list of all the matches of a player
+
+#### Response
+
+```
+[
+  { 
+    matchId: 1,
+    match: "SRH vs MI",
+    year: 2016
+  },
+
+  ...
+]
+```
+
+
+### API 6
+
+#### Path: `/matches/:matchId/players`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a list of players of a specific match
+
+#### Response
+
+```
+[
+  { 
+    playerId: 2,
+    playerName: "Joseph"
+  },
+  ...
+]
+```
+
+
+
+### API 7
+
+#### Path: `/players/:playerId/playerScores`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns the statistics of the total score, fours, sixes of a specific player based on the player ID
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
+
+#### Response
+
+```
+<<<<<<< HEAD
 Todo Deleted
+=======
+{
+  playerId: 1,
+  playerName: "Ram"
+  totalScore: 3453,
+  totalFours: 342,
+  totalSixes: 98
+}
+
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
 ```
 
 <br/>
@@ -247,3 +430,10 @@ Use `npm install` to install the packages.
 **Export the express instance using the default export syntax.**
 
 **Use Common JS module syntax.**
+<<<<<<< HEAD
+=======
+=======
+# NodeJs-7
+Node.js Coding Practice 7 [PLAYER MATCH SCORES]
+>>>>>>> 9c8b67d1e2af9a60cad4eff42d10427dbc7e5859
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba

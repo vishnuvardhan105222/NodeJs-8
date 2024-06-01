@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "name": "todo-application",
+=======
+    "name": "player-match-details",
+>>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
