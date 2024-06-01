@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Todo Application
 
 Given an `app.js` file and an empty database file `todoApplication.db`.
@@ -437,3 +438,7 @@ Use `npm install` to install the packages.
 Node.js Coding Practice 7 [PLAYER MATCH SCORES]
 >>>>>>> 9c8b67d1e2af9a60cad4eff42d10427dbc7e5859
 >>>>>>> 3f9cc10c364a0fb326817244fddbf8ddc4389aba
+=======
+# NodeJs-8
+Node.js Coding Practice 8 [Todo Application]
+>>>>>>> ac25a7412eab94a4c66bce4200ef9e663edad1c3
